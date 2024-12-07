@@ -1,5 +1,20 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const GsapStagger = () => {
   // TODO: Implement the gsap.stagger() method
+
+  useGSAP(() => {
+    gsap.to('.stagger-box', { 
+      scale: 1.2,
+      borderRadius: '50%',
+      ease: 'elastic.out',
+      repeat: -1,
+      yoyo: true,
+      stagger: {amount: 2, 
+        from:'random'},
+    });
+  }, []);
 
   return (
     <main>
@@ -31,13 +46,77 @@ const GsapStagger = () => {
       </p>
 
       <div className="mt-20">
-        <div className="flex gap-5">
+        <div className="flex gap-5 flex-wrap">
           <div className="w-20 h-20 bg-indigo-200 rounded-lg stagger-box" />
           <div className="w-20 h-20 bg-indigo-300 rounded-lg stagger-box" />
           <div className="w-20 h-20 bg-indigo-400 rounded-lg stagger-box" />
           <div className="w-20 h-20 bg-indigo-500 rounded-lg stagger-box" />
           <div className="w-20 h-20 bg-indigo-600 rounded-lg stagger-box" />
           <div className="w-20 h-20 bg-indigo-700 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-200 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-300 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-400 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-500 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-600 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-700 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-200 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-300 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-400 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-500 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-600 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-700 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-200 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-300 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-400 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-500 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-600 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-700 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />          <div className="w-20 h-20 bg-indigo-200 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-300 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-400 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-500 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-600 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-700 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-200 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-300 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-400 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-500 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-600 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-700 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-200 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-300 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-400 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-500 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-600 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-700 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-200 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-300 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-400 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-500 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-600 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-700 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
+          <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
           <div className="w-20 h-20 bg-indigo-800 rounded-lg stagger-box" />
         </div>
       </div>
